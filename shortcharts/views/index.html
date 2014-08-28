@@ -1,0 +1,140 @@
+<div id='nav'>
+    <a id='nav_link_home'  class='nav_link_sections' href='#' title='Short Charts'>
+        Shot Charts
+        </a>
+    <div id='nav-inner'>
+      <ul>
+        <li id="searchbox">
+          <input id="search" type="text" placeholder="Enter Player Name">
+          <button class='btn btn-default button_chart_ui btn-inverse' id="submit" type="button" value="Search">Search</button>
+        </li>          
+                
+      </ul>
+      <div class='clearfix'></div>
+    </div>
+</div>
+
+
+<div style="width: 100%;overflow:auto;margin-top:90px;">
+  <div style="float:left; width:45%; margin-left:5%">
+
+    <div id='court' style = "width:500px; margin:0px auto;">
+
+    <div class='btn-group' style = "padding-bottom: 20px;">
+      <button class='btn btn-default button_chart_ui btn-inverse' id='Shot Location' style ="font-size: 17px;">Shot Location</button>
+      <button class='btn btn-default button_chart_ui' id='Shot Zones' style ="font-size: 17px;">Shot Zones</button>
+      <button class='btn btn-default button_chart_ui' id='2s/3s/Paint' style ="font-size: 17px;">2s/3s/Paint</button>
+      <button class='btn btn-default button_chart_ui' id='Left/Center/Right' style ="font-size: 17px;">Left/Center/Right</button>
+    </div>
+
+    <div class='clearfix'> </div>    
+    </div>
+  </div>
+
+  <div id='chart_filters' style="width:45%; height:520px">
+      <div id='chart_container' style='margin-left:10%'>
+          <div id='chart_and_metrics'>
+            <div id='chart_summary'>
+                <h2>METRIC SUMMARY</h2>
+                <ul style="list-style:none; font-size:18px; text-transform: capitalize; margin-left: 0px; ">
+                  <li id="playername" style = "margin-bottom: 5px;">
+                    <span style="font-size:18px !important; float: left; width: 100px;">Player Name </span>
+                    <span style="padding-left:35px;"></span>
+                  </li>
+                  <li id="fg" style = "margin-bottom: 5px;">
+                    <span style="font-size:18px !important; float: left; width: 100px;">Field Goal</span> 
+                    <span style="padding-left:35px;"></span>
+                  </li>
+                  <li id="totalshots" style = "margin-bottom: 5px;">
+                    <span style="font-size:18px !important; float: left; width: 100px;">Total Shots</span> 
+                    <span style="padding-left:35px;"></span>
+                  </li>
+                  <li id="ptshot" style = "margin-bottom: 5px;">
+                    <span style="font-size:18px !important; float: left; width: 100px;">Pt/Shots</span> 
+                    <span style="padding-left:35px;"></span>
+                  </li>
+                </ul>
+            
+            </div> 
+            <div class='clearfix'></div>
+          </div>
+        </div>
+      
+        <div class='wrapper'>
+          <h2>FILTERS</h2>
+              <div id='chart_filter_options'>
+                  <table>
+                        <tr>
+                            <td class='chart_filter_title'>Radius</td>
+                            <td class='btn-group' style="padding-left :25px; padding-bottom : 0px;">
+                                <input id = "radius" type="text" size="30" value="1.5" style="width:310px; background:#D5D5D4; border-radius: 0px !important;"/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='chart_filter_title'>Period</td>
+                            <td class='btn-group' style="padding-left :25px; ">
+                                <button class='btn btn-default filter_period' id='period1' href='#' style = "margin-right: 10px;">Q1</button>
+                                <button class='btn btn-default filter_period' id='period2' href='#' style = "margin-right: 10px;">Q2</button>
+                                <button class='btn btn-default filter_period' id='period3' href='#' style = "margin-right: 10px;">Q3</button>
+                                <button class='btn btn-default filter_period' id='period4' href='#' style = "margin-right: 10px;">Q4</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='chart_filter_title'>Home v Away</td>
+                            <td class='btn-group' style="padding-left :25px">
+                                <button class='btn btn-default filter_homeaway' id='home' href='#' style = "margin-right: 10px;">Home</button>
+                                <button class='btn btn-default filter_homeaway' id='away' href='#' style = "margin-right: 10px;">Away</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='chart_filter_title'>Shot Type</td>
+                            <td style = "padding-left: 25px; padding-bottom : 0px;">
+                                <select class='filter_shot_type' style="width:330px; border-radius:0px !important; background:#D5D5D4 !important;">
+                                    <option value='all'>All</option>
+                                    <option value='jumper'>Jumper</option>
+                                    <!--option value='shot'>Shot</option-->
+                                    <option value='hook'>Hook</option>
+                                    <option value='dunk'>Dunk</option>
+                                    <option value='layup'>Layup</option>
+                                    <option value='driving layup'>Driving Layup</option>
+                                    <option value='driving dunk'>Alley oop</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='chart_filter_title'>Season</td>
+                            <td style = "padding-left: 25px; padding-bottom : 0px">
+                                <select class='choose_report' style="width:330px; border-radius:0px !important; background:#D5D5D4 !important; ">
+                                    <option value='2006' >2006-2007 SEASON</option>
+                                    <option value='2007' >2007-2008 SEASON</option>
+                                    <option value='2008' >2008-2009 SEASON</option>
+                                    <option value='2009' >2009-2010 SEASON</option>
+                                    <option value='2010' >2010-2011 SEASON</option>
+                                    <option value='2011' >2011-2012 SEASON</option>
+                                    <option value='2012' >2012-2013 SEASON</option>
+                                  </select>
+                              </td>
+                        </tr>
+
+                        <tr>
+                            <td class='chart_filter_title'>Score</td>
+                            <td style = "padding-left: 25px;">
+                                <select class='filter_margin' style="width:330px; border-radius:0px !important; background:#D5D5D4 !important;">
+                                    <option value='all'>All</option>
+                                    <option value=-15>Down 15+ pts.</option>
+                                    <option value=-7>Down 7-14 pts.</option>
+                                    <option value=-1>Down 1-6 pts.</option>
+                                    <option value=0>Tied</option>
+                                    <option value=1>Up 1-6 pts.</option>
+                                    <option value=7>Up 7-14 pts.</option>
+                                    <option value=15>Up 15+ pts.</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>

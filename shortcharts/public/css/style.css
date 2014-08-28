@@ -1,0 +1,169 @@
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.hexagon {
+  fill: none;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+#searchbox
+{
+    height: 35px;
+    padding: 10px;
+}
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 23px;
+    background: #E9E9E9;
+    width: 67%;
+}
+
+#submit
+{       
+    height: 35px;
+    margin: 0 0 0 10px;
+    width: 160px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    border-radius: 0px !important;
+}
+
+#submit:hover {       
+    background-color: #08306B;
+    background-image: linear-gradient(#C6DBEF, #08306B);
+}   
+
+#submit:active {       
+    background: #08306B;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+.hexagon {
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.wrapper{
+  /*padding: 0 15px;*/
+  margin-left: 10%;
+}
+
+#chart_filters h2 {
+  font-size: 20px;
+  color:#FFF;
+}
+
+#chart_filter_options td {
+  line-height: 24px;
+  padding: 6px;
+  }
+
+.chart_filter_title {
+  font-size: 18px;
+}
+
+h2, h3, h4 {
+  font-family : abin, Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+
+#chart_filters {
+  float: left;
+  width: 380px; 
+  background: rgba(225,224,224,0.4);
+}
+
+#nav {
+width: 100%;
+background-color: #A9A9A9;
+-moz-box-shadow: 0 2px 4px #444;
+-webkit-box-shadow: 0 2px 4px #444;
+box-shadow: 0 2px 4px #444;
+position: fixed;
+top: 0;
+z-index: 100;
+font-size: 20px;
+}
+
+#nav_link_home {
+color: white;
+font-size: 36px;
+text-decoration: none;
+line-height: 30px;
+float: left;
+padding: 12px 8%;
+}
+
+#nav-inner {
+margin: 0 auto;
+width: 100%;
+}
+
+#nav-inner ul {
+margin: 0;
+padding: 0;
+}
+
+#nav-inner ul li {
+float: right;
+list-style: none;
+width: 45%;
+padding-right : 5%;
+}
+
+#nav-inner li#nav-search-container {
+padding: 6px;
+float: right;
+}
+
+#nav_search {
+color: gray;
+padding: 3px;
+margin: 4px 0 2px 0;
+line-height: 20px;
+font-size: 18px;
+}
+
+.points_shotzones{
+  opacity: 0.7;
+  stroke-width:1;
+  stroke:"gray";
+}
+
+body {
+  background: url("../images/a.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Franklin Gothic Condensed" !important;
+}
+
+.filter_homeaway{
+  width : 160px;
+  border-radius: 0px !important;
+}
+
+.filter_period {
+  width: 75px;
+  border-radius: 0px !important; 
+}
