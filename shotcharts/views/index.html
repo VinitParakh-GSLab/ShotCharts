@@ -1,0 +1,136 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="navbar-header col-xs-6">
+        <a id='nav_link_home'  class='navbar-brand' href='#' title='Short Charts'>
+          SHOT CHARTS
+        </a>
+      </div>
+      <div class="col-xs-6">
+        <div class="row buffer-top">
+          <input id="search" class="form-control" type="text" placeholder="Enter Player Name">
+          <button class='btn btn-default' id="submit" type="button" value="Search">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class = "container">
+  <div class = "row">
+    
+    <div class = "col-xs-6">
+      <div class ="row">
+        <div id='court' style = "width:100%; margin:0px auto;"></div>
+        <div class = "col-xs-6 overlay-image">
+            <img src="/images/efficiency.png" id="eff" style="width:60%">
+        </div>
+        <div class = "col-xs-5 col-xs-offset-1 overlay-image">
+            <img src="/images/frequency.png" id="freq" style ="width:50%">
+        </div>
+      </div>
+    </div>
+
+    <div id='chart_filters' class = "col-xs-6">
+      <div id='chart_summary' class = "row">
+        <div class="row bottom-buffer top-buffer"> 
+          <div class="col-xs-7 col-xs-offset-1 filter_header"> Metric Summary </div>
+        </div>
+        <div class="row bottom-buffer">
+          <div class = "col-xs-3 col-xs-offset-1"> Player Name </div>
+          <div class = "col-xs-8" id ="playername"> Name </div>
+        </div>
+        <div class="row bottom-buffer">
+          <div class = "col-xs-3 col-xs-offset-1"> Field Goal (%) </div>
+          <div class = "col-xs-8" id ="fg"> N/A </div>
+        </div>
+        <div class="row bottom-buffer">
+          <div class = "col-xs-3 col-xs-offset-1"> Total Shots </div>
+          <div class = "col-xs-8" id ="totalshots"> 0 </div>
+        </div>
+        <div class="row bottom-buffer">
+          <div class = "col-xs-3 col-xs-offset-1"> Pt/Shots </div>
+          <div class = "col-xs-8" id ="ptshot"> N/A </div>
+        </div>
+      </div> 
+
+      <div class='clearfix'></div>
+
+      <div id= "filters" class='row'>
+        <div class="row bottom-buffer">
+          <div class="col-xs-5 col-xs-offset-1 filter_header"> Filters </div>
+        </div>
+        <div class="row bottom-buffer">
+            <div class="col-xs-3 col-xs-offset-1">Radius</div>
+            <div class='col-xs-7'>
+                <input class="form-control filter_radius" id = "radius" type="text" size="30" value="1.5"/>
+            </div>
+        </div>
+
+            <div class="row bottom-buffer">
+                <div class="col-xs-3 col-xs-offset-1"> Quarter </div>
+                <div class='col-xs-7 btn-group'>
+                    <button type="button" class='btn btn-default filter_period' id='period1' href='#'>Q1</button>
+                    <button type="button" class='btn btn-default filter_period' id='period2' href='#'>Q2</button>
+                    <button type="button"  class='btn btn-default filter_period' id='period3' href='#'>Q3</button>
+                    <button type="button"  class='btn btn-default filter_period' id='period4' href='#'>Q4</button>
+                </div>
+            </div>
+
+            <div class="row bottom-buffer">
+                <div class = "col-xs-3 col-xs-offset-1">Game</div>
+                <div class='col-xs-7 btn-group'>
+                    <button class='btn btn-default filter_homeaway' id='home' href='#'>Home</button>
+                    <button class='btn btn-default filter_homeaway' id='away' href='#'>Away</button>
+                </div>
+            </div>
+
+            <div class="row bottom-buffer">
+                <div class="col-xs-3 col-xs-offset-1"> Shot Type </div>
+                <div class="col-xs-7">
+                    <select class='form-control filter_shot_type'>
+                        <option value='all'>All</option>
+                        <option value='jumper'>Jumper</option>
+                        <option value='hook'>Hook</option>
+                        <option value='dunk'>Dunk</option>
+                        <option value='layup'>Layup</option>
+                        <option value='driving layup'>Driving Layup</option>
+                        <option value='driving dunk'>Alley oop</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row bottom-buffer">
+                <div class = "col-xs-3 col-xs-offset-1">Season</div>
+                <div class = "col-xs-7">
+                    <select class='form-control choose_report'>
+                        <option value='2006' >2006-2007 SEASON</option>
+                        <option value='2007' >2007-2008 SEASON</option>
+                        <option value='2008' >2008-2009 SEASON</option>
+                        <option value='2009' >2009-2010 SEASON</option>
+                        <option value='2010' >2010-2011 SEASON</option>
+                        <option value='2011' >2011-2012 SEASON</option>
+                        <option value='2012' >2012-2013 SEASON</option>
+                      </select>
+                  </div>
+            </div>
+
+            <div class="row bottom-buffer">
+                <div class = "col-xs-3 col-xs-offset-1">Score</div>
+                <div class = "col-xs-7">
+                    <select class=' form-control filter_margin'>
+                        <option value='all'>All</option>
+                        <option value=-15>Down 15+ pts.</option>
+                        <option value=-7>Down 7-14 pts.</option>
+                        <option value=-1>Down 1-6 pts.</option>
+                        <option value=0>Tied</option>
+                        <option value=1>Up 1-6 pts.</option>
+                        <option value=7>Up 7-14 pts.</option>
+                        <option value=15>Up 15+ pts.</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

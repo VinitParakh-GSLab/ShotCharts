@@ -1,0 +1,163 @@
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.hexagon {
+  fill: none;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    margin-right: 2.5%;
+    margin-top: 1.5%;
+    background-color: #E9E9E9;
+    border-color: #E9E9E9;
+    width: 70%;
+    border-radius: 0px !important;
+}
+
+#submit
+{       
+    margin-top: 1.5%;
+    height: 35px;
+    width: 27.5%;
+    border-radius: 0px !important;
+    font-size: 15px;
+    background-color: #838180;
+    border-color:#838180;
+    color: white;
+}
+
+#submit:hover {       
+    background-color: #08306B;
+    background-image: linear-gradient(#7595B6, #08306B);
+}   
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+.hexagon {
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+#chart_filters {
+  background: rgba(225,224,224,0.4);
+}
+
+.navbar-default {
+  background-color: #3c3b3d !important;
+  border-color: #3c3b3d !important;
+}
+
+#nav_link_home, .filter_header {
+color: white;
+font-size: 25px;
+font-weight: bold;
+}
+
+.points_shotzones{
+  opacity: 0.7;
+  stroke-width:1;
+  stroke:"gray";
+}
+
+body {
+  padding-top: 9%;
+  width: 100%;
+  background: url("../images/a.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+}
+
+p, div {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+}
+
+.filter_radius{
+  border-radius: 0px !important;
+  background-color: #E9E9E9 !important; 
+}
+
+.btn-default.filter_homeaway{
+  width : 50%;
+  border-radius: 0px !important;
+  background-color: #E9E9E9 !important;
+}
+
+.btn-default.filter_period {
+  width: 25%;
+  border-radius: 0px !important; 
+  background-color: #E9E9E9 !important;
+}
+
+.filter_shot_type,
+.choose_report,
+.filter_margin
+{
+  width: 100% !important;
+  border-radius: 0px !important; 
+  background-color: #E9E9E9 !important;
+}
+
+.btn-default.btn-inverse
+{
+  background-color: #363636 !important;
+  color: white !important;
+  border-color: #363636 !important; 
+}
+
+#playername
+{
+  text-transform: capitalize;
+}
+
+.bottom-buffer
+{
+  margin-bottom: 9px;
+}
+
+.top-buffer
+{
+  margin-top : 7px;
+}
+
+.ui-autocomplete {
+     z-index: 9999 !important;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    background: #3C3B3D !important;
+    border: none !important;
+    color:#000;
+    border-radius:0 !important;
+    font-weight: normal !important;
+}
+
+.overlay-image
+{
+    top:-70px;
+}
